@@ -20,8 +20,8 @@ jobs:
           git remote add upstream https://github.com/foundryvtt/pf2e.git
           git fetch upstream
           git checkout v14-dev
-          git merge upstream/main
-          git push origin main
+          git merge upstream/v14-dev
+          git push origin v14-dev
         env:
           # Use a PAT to trigger subsequent workflows if needed
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
