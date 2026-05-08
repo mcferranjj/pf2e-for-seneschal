@@ -17,6 +17,8 @@ jobs:
 
       - name: Sync upstream
         run: |
+          git config --global user.email "mcferran.joshua@gmail.com"
+          git config --global user.name "Joshua McFerran"
           git remote add upstream https://github.com/foundryvtt/pf2e.git
           git fetch upstream
           git checkout v14-dev
