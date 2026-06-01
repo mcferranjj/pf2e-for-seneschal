@@ -1238,6 +1238,13 @@
             "CrumblingCarapace": {
                 "CriticalHit": "Carapace Broken by a Critical Hit"
             },
+            "CultistOfTorment": {
+                "AmplifyTorment": {
+                    "Label": "Target's HP is:",
+                    "UnderFull": "Less than 100%",
+                    "UnderHalf": "Less than 50%"
+                }
+            },
             "CustomArmor": {
                 "BrokenArmor": "Broken Custom Armor",
                 "CriticalHit": "Custom Armor Broken by a Critical Hit"
@@ -1561,6 +1568,11 @@
                         "CriticalSuccess": "On a critical hit, the target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.",
                         "Success": "On a hit, the target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}."
                     }
+                }
+            },
+            "PureLegionSquad": {
+                "CloakOfPurity": {
+                    "Label": "Commander can cast Divine spells"
                 }
             },
             "Pyrkaion": {
@@ -4366,7 +4378,7 @@
                     "HunkerDownLabel": "Trusty Helmet — Hunker Down"
                 },
                 "UnholyPlate": {
-                    "Note": "On a critical hit with the horns, the target must succeed at a @Check[fortitude|dc:30] or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (or @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} on a critical failure)."
+                    "Note": "On a critical hit with the horns, the target must succeed at a @Check[fortitude|dc:30|showDC:all|options:inflicts:drained] or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (or @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} on a critical failure)."
                 },
                 "UnholyWater": {
                     "Note": "Can damage only creatures with the holy trait."
