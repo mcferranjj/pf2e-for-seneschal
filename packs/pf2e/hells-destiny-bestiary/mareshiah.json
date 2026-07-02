@@ -1145,7 +1145,7 @@
             },
             "folder": "7cyoYPoPYA01mErU",
             "img": "icons/magic/symbols/ring-circle-smoke-blue.webp",
-            "name": "Translocate",
+            "name": "Translocate (At Will)",
             "sort": 1700000,
             "system": {
                 "area": null,
@@ -1666,10 +1666,52 @@
             "type": "action"
         },
         {
+            "_id": "TyeM0OHUiod1sQgz",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc"
+            },
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "+1 Status to All Saves vs. Magic",
+            "sort": 2700000,
+            "system": {
+                "actionType": {
+                    "value": "passive"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "defensive",
+                "description": {
+                    "value": ""
+                },
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Monster Core"
+                },
+                "rules": [
+                    {
+                        "key": "FlatModifier",
+                        "predicate": [
+                            "item:magical"
+                        ],
+                        "selector": "saving-throw",
+                        "type": "status",
+                        "value": 1
+                    }
+                ],
+                "slug": "1-status-to-all-saves-vs-magic",
+                "traits": {
+                    "value": []
+                }
+            },
+            "type": "action"
+        },
+        {
             "_id": "cbaULlUeMrNNbwGU",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Ward Contract",
-            "sort": 2700000,
+            "sort": 2800000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -1706,7 +1748,7 @@
             "_id": "TzNeLGCVqEmBo8Kj",
             "img": "systems/pf2e/icons/actions/ThreeActions.webp",
             "name": "Draft Contract",
-            "sort": 2800000,
+            "sort": 2900000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -1736,9 +1778,12 @@
         },
         {
             "_id": "MoDNXzGWqLQ755Gk",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.OmV6E3aELvq9CkK1"
+            },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Greater Constrict",
-            "sort": 2900000,
+            "sort": 3000000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -1748,7 +1793,7 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>@Damage[(3d6+15)[bludgeoning]], @Check[fortitude|dc:42|basic]</p>\n<p>Only when grabbed by Binding Contract</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
+                    "value": "<p>@Damage[(3d6+15)[bludgeoning]], @Check[fortitude|dc:42|basic|options:inflicts:unconscious]</p>\n<p>Only when grabbed by Binding Contract</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
                 },
                 "publication": {
                     "license": "ORC",
@@ -1767,7 +1812,7 @@
             "_id": "NUq7H4HX8qbmL9Ds",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Infernal Investment",
-            "sort": 3000000,
+            "sort": 3100000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -1796,7 +1841,7 @@
             "_id": "gmbKc2ZYweTvWyyP",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Infernal Wound",
-            "sort": 3100000,
+            "sort": 3200000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -1827,7 +1872,7 @@
             "_id": "BOQEJTqd4d8zcTY3",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Grab",
-            "sort": 3200000,
+            "sort": 3300000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -1856,7 +1901,7 @@
             "_id": "EMCKBRRZ72TCldot",
             "img": "systems/pf2e/icons/default-icons/lore.svg",
             "name": "Legal Lore",
-            "sort": 3300000,
+            "sort": 3400000,
             "system": {
                 "description": {
                     "value": ""
@@ -1907,7 +1952,7 @@
                 "value": 45
             },
             "allSaves": {
-                "value": ""
+                "value": "+1 status to all saves vs. magic"
             },
             "hp": {
                 "details": "",
