@@ -4666,9 +4666,14 @@
             },
             "BodyParts": {
                 "Arms": "Arms",
+                "Bones": "Bones",
                 "Head": "Head",
+                "Joints": "Joints",
                 "Legs": "Legs",
-                "Torso": "Torso"
+                "Muscles": "Muscles",
+                "Prompt": "Select a body part.",
+                "Torso": "Torso",
+                "Wrists": "Wrists"
             },
             "BonusLabel": {
                 "NegativeOne": "-1",
@@ -5279,6 +5284,10 @@
                 },
                 "RestorativeStrike": {
                     "Note": "You can target a second willing creature to heal the same amount from the spell. This creature can be outside of the spell's range, provided it's adjacent to the enemy you hit."
+                },
+                "SacredDefense": {
+                    "ReligionDCThirty": "DC 30 Religion",
+                    "ReligionDCForty": "DC 40 Religion"
                 },
                 "SacredGround": {
                     "Harmful": "A creature that remains in the area for the entire 10 minutes regains @Damage[(@actor.level)[void,healing]|traits:healing,void]{Hit Points} equal to your level. This activity has the healing and void traits and heals undead creatures (or other creatures with void healing).",
@@ -5946,6 +5955,9 @@
                 "LionsShield": {
                     "LionsBiteLabel": "Lion's Bite",
                     "LionsHeadLabel": "Lion's Head"
+                },
+                "Manacles": {
+                    "WristsNote": "You must succeed at a @Check[flat|dc:5|name:Manacles|showDC:all] any time you use a manipulate action or else that action fails."
                 },
                 "MantisEmbrace": {
                     "CrushingEmbraceLabel": "Crushing Embrace"
@@ -7745,6 +7757,7 @@
                 "Deity": "Select a deity.",
                 "DeitysDomain": "Select a deity's domain.",
                 "DieSize": "Select a die size.",
+                "DifficultyClass": "Select a DC.",
                 "DragonBreathWeapon": "Select a dragon's breath weapon.",
                 "Effect": "Select an effect.",
                 "Element": "Select an element.",
@@ -8558,13 +8571,6 @@
             "SpellEffectMindSwap": {
                 "RollOptionLabel": "Mind Swap — Impersonate the Other Target of Mind Swap"
             },
-            "SpellEffectNecrotize": {
-                "Bones": "Bones",
-                "Joints": "Joints",
-                "Legs": "Legs",
-                "Muscles": "Muscles",
-                "Prompt": "Select a body part."
-            },
             "SpellEffectOverstuff": {
                 "Addendum": "If you spend an action to end this condition, you succeed automatically."
             },
@@ -8593,6 +8599,9 @@
                 "Insight": "Dream of Insight",
                 "Prompt": "Select a dream.",
                 "Voyaging": "Dream of Voyaging"
+            },
+            "SpellEffectSynesthesia": {
+                "Note": "You must succeed at a @Check[flat|dc:5|name:Synesthesia|showDC:all] each time you use a concentrate action, or the action fails and is wasted."
             },
             "SpellEffectTemptFate": {
                 "Note": "If the saving throw's result is a success, it becomes a critical success. If it's a failure, it becomes a critical failure, and the critical failure can't be reduced by abilities that usually reduce critical failure."
