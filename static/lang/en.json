@@ -679,9 +679,10 @@
                 },
                 "Configure": {
                     "Lootable": {
+                        "AutomationSettings": "Automation Settings",
                         "DefaultLootable": "Global Default (Lootable)",
                         "DefaultNotLootable": "Global Default (Not Lootable)",
-                        "Hint": "Set whether this NPC becomes lootable by players upon its demise. The global default can be configured in <a>Automation Settings</a>.",
+                        "Hint": "Set whether this NPC becomes lootable by players upon its demise. The global default can be configured in {settings}.",
                         "Label": "Lootable?",
                         "Lootable": "Lootable",
                         "NotLootable": "Not Lootable"
@@ -7203,6 +7204,12 @@
             }
         },
         "identification": {
+            "Breakdown": {
+                "Adjustment": "{adjustment} {value}",
+                "Base": "Level {level} DC {dc}",
+                "OffTradition": "Off-tradition {value}"
+            },
+            "Difficulty": "Difficulty",
             "DisplayDetails": "Display Details",
             "Identified": "Identified",
             "Identify": "Identify Item",
